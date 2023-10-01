@@ -62,7 +62,7 @@ header {
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
 
-.concept-page {
+.concept-page, .decoration-page {
     background-image: url(./hojas-fondo.jpg);
     background-size: cover;
     display: flex;
@@ -70,9 +70,9 @@ header {
     align-items: center;
 }
 
-article {
+.concept-page__box {
     background-color: black;
-    width:80%;
+    width:60%;
     height: 60%;
     color: white;
     display: flex;
@@ -81,7 +81,7 @@ article {
     flex-direction: column;
 }
 
-article h2 {
+.concept-page__box h2 {
     width: 80%;
     height: 20%;
     display: flex;
@@ -96,4 +96,28 @@ article h2 {
     flex-direction: column;
     justify-content: space-evenly;
     text-align: justify;
+}
+
+.decoration-page {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(./hojas-fondo.jpg);
+}
+
+.decoration-page__box {
+    width: 70%;
+    height: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.decoration-page_images {
+    width: 30%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.decoration-page img {
+    margin: 5%;
 }

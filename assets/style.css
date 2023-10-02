@@ -5,7 +5,7 @@
     font-family:'Roboto', sans-serif;;
 }
 
-.concept-page, .decoration-page, .main-page {
+.concept-page, .decoration-page, .main-page, .blog-page {
     height: 100vh;
     width: 100vw;
     display: flex;
@@ -283,4 +283,17 @@ header {
 .line {
     border: 1px solid #f7da6f;
     width: 20%;
+}
+
+.blog-page__header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 20%;
+}
+
+.blog-page__content {
+    height: 80%;
+    width: 100%;
 }

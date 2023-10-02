@@ -10,16 +10,16 @@
     <link rel="stylesheet" href="./assets/style.css">
 </head>
 <body>
-    <section class="main-page">
+    <section class="main-page" id="main-page">
         <nav>
             <img class="logo-nav" src="./assets/Mozza-Bar-Logo.png" alt="brand logo">
             <ul>
-                <li>Home</li>
-                <li>Concepto</li>
-                <li>Fotos</li>
-                <li>Menu</li>
-                <li>Reservas</li>
-                <li>Blog</li>
+                <li><a href="#main-page">Home</a></li>
+                <li><a href="#concept-page">Concepto</a></li>
+                <li><a href="#decoration-page">Fotos</a></li>
+                <li><a href="#menu-page">Menu</a></li>
+                <li><a href="#booking-page">Reservas</a></li>
+                <li><a href="#blog-page">Blog</a></li>
                 <li>Contacto</li>
             </ul>
         </nav>
@@ -31,7 +31,7 @@
             </div>
         </header>
     </section>
-    <section class="concept-page">
+    <section class="concept-page" id="concept-page">
         <article class="concept-page__box">
             <h2>CONCEPTO</h2>
             <div class="concept-text">
@@ -47,26 +47,26 @@
             </div>
         </article>
     </section>
-    <section class="decoration-page">
+    <section class="decoration-page" id="decoration-page">
         <article class="decoration-page__box">
-            <div class="decoration-page_images">
+            <div class="decoration-page__images">
                 <img src="./assets/alex-haney-CAhjZmVk5H4-unsplash.jpg">
                 <img src="./assets/ali-inay-y3aP9oo9Pjc-unsplash.jpg">
                 <img src="./assets/jason-leung-poI7DelFiVA-unsplash.jpg">
             </div>
-            <div class="decoration-page_images">
+            <div class="decoration-page__images">
                 <img src="./assets/jay-wennington-N_Y88TWmGwA-unsplash.jpg">
                 <img src="./assets/nick-karvounis-Ciqxn7FE4vE-unsplash.jpg">
                 <img src="./assets/pablo-merchan-montes-Orz90t6o0e4-unsplash.jpg">
             </div>
-            <div class="decoration-page_images">
+            <div class="decoration-page__images">
                 <img src="./assets/zakaria-zayane-0uAVsDcyD0M-unsplash.jpg">
                 <img src="./assets/nick-karvounis-Ciqxn7FE4vE-unsplash.jpg">
                 <img src="./assets/jason-leung-poI7DelFiVA-unsplash.jpg">
             </div>
         </article>
     </section>
-    <section class="menu-page">
+    <section class="menu-page" id="menu-page">
         <div class="menu-page__header">
             <h2>CARTA</h2>
             <ul class="menu-page__nav">
@@ -269,7 +269,7 @@
         </div>
         <button type="button">VER LA CARTA DE DESAYUNOS</button>
     </section>
-    <section class="booking-page">
+    <section class="booking-page" id="booking-page">
         <div class="booking-page-header">
             <h3 class="booking-page__title">
                 RESERVAS
@@ -282,7 +282,7 @@
                         <div class="booking-page__people_num">
                             <label for="people_num">Personas</label><br/>
                             <select type="select" id="people-num" name="people-num">
-                                <option value="" disabled>Elije una opcion</option>
+                                <option selected="true" value="" disabled="disabled">Elije una opcion</option>
                                 <option value="2people">2 personas</option>
                                 <option value="3people">3 personas</option>
                                 <option value="4people">4 personas</option>
@@ -291,7 +291,7 @@
                         <div class="booking-page__time">
                             <label for="time">Hora</label><br/>
                             <select type="select" id="time" name="time">
-                                <option value="" disabled>Elije una opcion</option>
+                                <option selected="true" value="" disabled="disabled">Elije una opcion</option>
                                 <option value="20.00">20:00h</option>
                                 <option value="20.30">20:30h</option>
                                 <option value="21.00">21:00h</option>
@@ -301,7 +301,7 @@
                     <div class="booking-page__table">
                         <label for="table">Tipo de mesa</label><br/>
                         <select type="select" id="table" name="table">
-                            <option value="" disabled>Elije una opcion</option>
+                            <option selected="true" value="" disabled="disabled">Elije una opcion</option>
                             <option value="outside">Terraza</option>
                             <option value="inside">Interior</option>
                         </select>
@@ -329,32 +329,77 @@
             </div>
         </div>
     </section>
-    <section class="blog-page">
+    <section class="blog-page" id="blog-page">
         <div class="blog-page__header">
             <h3 class="blog__title">
                 BLOG
             </h3>
         </div>
         <article class="blog-page__content">
-            <div class="blog-page__box">
-                <p>03/08/2023</p>
-                <h4>MOZZA BAR ABRE NUEVA TERRAZA DE VERANO EN BOMBAY LOUNGE</h4>
-                <P>Este viernes Mozza Bar abre una nueva terraza de verano en Bombay Lounge</P>
+            <div class="blog-page__box box-1">
+                <div class="mozzabar-box">
+                    <p>MOZZA BAR</p>
+                </div>
+                <div class="blog-page__box-text">
+                    <p class="blog-date">03/08/2023</p>
+                    <h4>MOZZA BAR ABRE NUEVA TERRAZA DE VERANO EN BOMBAY LOUNGE</h4>
+                    <p class="blog-description">Este viernes Mozza Bar abre una nueva terraza de verano en Bombay Lounge</p>
+                </div>
             </div>
-            <div class="blog-page__box">
-                <p>03/08/2023</p>
-                <h4>MOZZA BAR ABRE NUEVA TERRAZA DE VERANO EN BOMBAY LOUNGE</h4>
-                <P>Este viernes Mozza Bar abre una nueva terraza de verano en Bombay Lounge</P>
+            <div class="blog-page__box box-2">
+                <div class="mozzabar-box">
+                    <p>MOZZA BAR</p>
+                </div>
+                <div class="blog-page__box-text">
+                    <p class="blog-date">07/07/2023</p>
+                    <h4>PROMOCIÓN ESPECIAL: TARTA Y COCTAIL 6,90€</h4>
+                </div>
             </div>
-            <div class="blog-page__box">
-                <p>07/07/2023</p>
-                <h4>PROMOCIÓN ESPECIAL: TARTA Y COCTAIL 6,90€</h4>
-            </div>
-            <div class="blog-page__box">
-                <p>07/07/2023</p>
-                <h4>MOZZA BAR: BRUNCH: 2 DE MARZO</h4>
+            <div class="blog-page__box box-3">
+                <div class="mozzabar-box">
+                    <p>MOZZA BAR</p>
+                </div>
+                <div class="blog-page__box-text">
+                    <p class="blog-date">07/07/2023</p>
+                    <h4>MOZZA BAR: BRUNCH 2 DE MARZO</h4>
+                </div>
             </div>
         </article>
+        <div class="blog-page__button-area">
+            <button type="button">VER TODAS LAS ENTRADAS</button>
+        </div>
     </section>
+    <footer class="page-footer">
+        <div class="interest-info">
+            <div class="interest-info__box">
+                <h6>ENLACES DE INTERES</h6>
+                <ul>
+                    <li>Aviso legal</li>
+                    <li>Cookies</li>
+                </ul>
+            </div>
+            <div class="interest-info__box">
+                <h6>HORARIOS</h6>
+                <p>
+                    Lunes a domingo<br/>
+                    07:30h a 01:30h
+                </p>
+            </div>
+            <div class="interest-info__box">
+                <h6>CONTACTO</h6>
+                <p>
+                    Calle Conde Peñalver 64<br/>
+                    26006 - Madrid
+                </p>
+                <p>
+                    910 345 678<br/>
+                    hola@mozzabar.es
+                </p>
+            </div>
+        </div>
+        <div class="reserved-n-rrss">
+            <p>All rights reserved</p>
+        </div>
+    </footer>
 </body>
 </html>

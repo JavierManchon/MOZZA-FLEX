@@ -5,7 +5,7 @@
     font-family:'Roboto', sans-serif;;
 }
 
-section {
+.concept-page, .decoration-page, .main-page {
     height: 100vh;
     width: 100vw;
     display: flex;
@@ -120,4 +120,167 @@ header {
 
 .decoration-page img {
     margin: 5%;
+}
+
+.menu-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.menu-page__header, .booking-page__header {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    margin: 20px 0;
+}
+
+.menu-page__header ul {
+    margin-top: 10px;
+}
+
+.menu-page__menu {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+
+.menu-page__background {
+    width: 80%;
+    background-image: url(./hojas-fondo.jpg);
+    background-size: cover;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    padding: 5%;
+}
+
+.menu-page__box {
+    background-color: white;
+    width: 40%;
+    padding: 3%;
+}
+
+.menu-page__box .menu-title, .menu-page__box .menu-item {
+    text-align: left;
+}
+
+.menu-page__box .prices {
+    text-align: right;
+}
+
+.menu-page__box .title {
+    font-weight: bold;
+}
+
+.menu-page__box table {
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.menu-page button {
+    background-color: #f7da6f;
+    border-radius: 0%;
+    border: 1px solid  #f7da6f;
+    font-weight: bold;
+    color: white;
+    padding: 1%;
+    width: 300px;
+    margin: 20px 0;
+}
+
+.booking-page {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(./diseno-decoracion-restaurante.webp);
+    background-size: cover;
+    color: white;
+}
+
+.booking-page__header {
+    height: 20%;
+    width: 100%;
+}
+
+.booking-page__header::before, .booking-page__header::after {
+    border: 1px solid white;
+}
+
+.booking-page__form-n-info {
+    height: 80%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+
+.booking-page__form form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.direction-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.booking-page__people_num, .booking-page__time {
+    width: 45%;
+}
+
+.booking-page__people_num select, .booking-page__time select {
+    width: 100%;
+}
+
+.booking-page__table {
+    margin-bottom: 20px;
+}
+
+.booking-page__table select {
+    width: 100%;
+}
+
+.booking-page__form button {
+    margin-bottom: 20px;
+    font-weight: bold;
+    padding: 1%
+}
+
+.booking-page__not-available button {
+    width: 100%;
+    margin: 5px 0;
+}
+
+.booking-page__info, .booking-page__form {
+    width: 40%;
+}
+
+.booking-page__mozzabar, .booking-page__adress {
+    padding: 5%;
+}
+
+.booking-page__mozzabar h4 {
+    font-weight: bold;
+    font-size: 40px;
+    color: #f7da6f;
+}
+
+.booking-page__mozzabar p {
+    font-weight: bold;
+    font-size: 30px;
+}
+
+.line {
+    border: 1px solid #f7da6f;
+    width: 20%;
 }

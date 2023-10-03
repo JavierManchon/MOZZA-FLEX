@@ -92,6 +92,21 @@ header {
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    position:relative;
+}
+
+.lettuce {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 30%;
+}
+
+.coctail {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 25%;
 }
 
 .concept-page__box h2 {
@@ -100,6 +115,14 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.concept-page__box h2::after, .concept-page__box h2::before{
+    display: inline-block;
+    width: 10%;
+    border: 1px solid white;
+    content: "";
+    margin: 0 1% 1% 1%;
 }
 
 .concept-text {
@@ -133,11 +156,13 @@ header {
 
 .decoration-page__images img:hover {
     transform: scale(1.5);
+    transition: 0.5s;
 }
 
 .decoration-page img {
     margin: 5%;
     cursor: pointer;
+    transition-duration: 0.5s;
 }
 
 .menu-page {
@@ -162,7 +187,14 @@ header {
 .menu-page__header h2 {
     width: 100%;
     text-align: center;
-    cursor: pointer;
+}
+
+.menu-page__header h2::after, .menu-page__header h2::before{
+    display: inline-block;
+    width: 10%;
+    border: 1px solid black;
+    content: "";
+    margin: 0 1% 1% 1%;
 }
 
 .menu-page__header, .booking-page__header {
@@ -234,6 +266,7 @@ header {
     box-shadow: 0 0 10px black;
 }
 
+
 .booking-page {
     height: 100vh;
     width: 100vw;
@@ -251,12 +284,16 @@ header {
     width: 100%;
 }
 
-.booking-page__title {
-    font-weight: bold;
+.booking-page__header h3::after, .booking-page__header h3::before{
+    display: inline-block;
+    width: 10%;
+    border: 1px solid white;
+    content: "";
+    margin: 0 1% 1% 1%;
 }
 
-.booking-page__header::before, .booking-page__header::after {
-    border: 1px solid white;
+.booking-page__title {
+    font-weight: bold;
 }
 
 .booking-page__form-n-info {
@@ -420,7 +457,6 @@ header {
 .contact-page__contact img {
     background-color: white;
     height: 20%;
-    width: 10%;
     margin-bottom: 10px;
 }
 
@@ -501,7 +537,6 @@ header {
     color: black;
     display: flex;
     flex-direction: column;
-    padding: 1%;
 }
 
 .interest-info {
@@ -517,6 +552,7 @@ header {
     display: flex;
     flex-direction: column;
     width: 25%;
+    margin-top: 10px;
 }
 
 .interest-info__box ul {

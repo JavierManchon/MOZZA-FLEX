@@ -2,10 +2,14 @@
     margin: 0;
     padding: 0;
     list-style: none;
-    font-family:'Roboto', sans-serif;;
+    font-family:'Roboto', sans-serif;
 }
 
-.concept-page, .decoration-page, .main-page, .blog-page {
+html {
+    width: 100vw;
+}
+
+.concept-page, .decoration-page, .main-page, .blog-page, .contact-page {
     height: 100vh;
     width: 100vw;
     display: flex;
@@ -19,8 +23,6 @@ nav {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    position: fixed;
-    z-index: 2;
 }
 
 .logo-nav {
@@ -44,8 +46,8 @@ ul a {
 }
 
 header {
-    width: 100%;
-    height: 100%;
+    width: 100vw;
+    height: 90%;
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(./diseno-decoracion-restaurante.webp);
     background-size: cover;
     display: flex;
@@ -135,12 +137,32 @@ header {
 
 .decoration-page img {
     margin: 5%;
+    cursor: pointer;
 }
 
 .menu-page {
+    height: 100%;
+    width: 100vw;
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+
+.menu-page__nav {
+    width: 70%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.menu-page__nav li {
+    width: 20%;
+    text-align: center;
+}
+
+.menu-page__header h2 {
+    width: 100%;
+    text-align: center;
+    cursor: pointer;
 }
 
 .menu-page__header, .booking-page__header {
@@ -204,6 +226,7 @@ header {
     width: 300px;
     margin: 20px 0;
     transition-duration: 0.5s;
+    cursor: pointer;
 }
 
 .menu-page button:hover, .blog-page__button-area button:hover {
@@ -336,6 +359,7 @@ header {
     flex-direction: column;
     justify-content: center;
     transition-duration: 0.5s;
+    cursor: pointer;
 }
 
 .blog-page__box:hover {
@@ -381,16 +405,102 @@ header {
     font-size: 25px;
 }
 
+.contact-page__contact {
+    width: 100%;
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(./diseno-decoracion-restaurante.webp);
+    background-size: cover;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
 
+.contact-page__contact img {
+    background-color: white;
+    height: 20%;
+    width: 10%;
+    margin-bottom: 10px;
+}
 
+.contact-page__contact p {
+    font-weight: bold;
+    margin-bottom: 10px;
+}
 
+.contact-icons p {
+    font-weight: lighter;
+}
 
-footer {
-    height: 40hv;
-    width: 100wv;
+.map, .phone, .letter {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contact-icons i {
+    color: #f7da6f;
+    font-size: 30px;
+    margin: 10px 0;
+}
+
+.contact-icons {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.contact-icons div {
+    width: 33%;
+}
+
+.contact-page__follow-us {
+    width: 100%;
+    height: 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.contact-page__follow-us h3 {
+    text-align: center;
+    width: 100%;
+    color: black;
+    height: 50%;
+}
+
+.contact-page__follow-us div {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-evenly;
+}
+
+.contact-page__follow-us h4 {
+    border: 1px solid black;
+    padding: 10px;
+    width: 15%;
+    text-align: center;
+    transition-duration: 0.5s;
+    cursor: pointer;
+}
+
+.contact-page__follow-us h4:hover {
+    box-shadow: 0px 0px 10px black;
+    transition: 0.5s;
+}
+
+.page-footer {
+    height: 20%;
+    width: 100%;
     background-color: #dcdcde;
     color: black;
-    display: block;
+    display: flex;
+    flex-direction: column;
     padding: 1%;
 }
 
@@ -409,7 +519,16 @@ footer {
     width: 25%;
 }
 
+.interest-info__box ul {
+    display: flex;
+    flex-direction: column;
+}
+
 .reserved-n-rrss {
     height: 10%;
     width: 100%;
+}
+
+.reserved-n-rrss div {
+    color: black;
 }

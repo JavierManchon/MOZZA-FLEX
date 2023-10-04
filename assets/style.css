@@ -29,6 +29,10 @@ nav {
     height: 80%;
 }
 
+.burger-nav {
+    display: none;
+}
+
 ul {
     display: flex;
     width: 50%;
@@ -475,6 +479,8 @@ header {
     align-items: center;
 }
 
+
+
 .contact-icons i {
     color: #f7da6f;
     font-size: 30px;
@@ -487,10 +493,16 @@ header {
     flex-direction: row;
     align-items: center;
     justify-content: space-evenly;
+    
 }
 
 .contact-icons div {
     width: 33%;
+    height: 33%;
+}
+
+.contact-icons p {
+    text-align: center;
 }
 
 .contact-page__follow-us {
@@ -562,9 +574,199 @@ header {
 
 .reserved-n-rrss {
     height: 10%;
-    width: 100%;
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    margin-left: 10%;
+    justify-content: space-between;
 }
 
-.reserved-n-rrss div {
-    color: black;
+.rrss img {
+    height: 100%;
 }
+
+@media (max-width: 576px) {
+    .main-page ul {
+        display: none;
+    }
+
+    .welcome h1, .welcome h2 {
+        font-size: 80%;
+    }
+
+    .burger-nav {
+        display: flex;
+        height: 50%;
+    }
+
+    .concept-text p, .contact-icons p, .contact-page__follow-us h4, footer p, footer li {
+        font-size: 70%;
+    }
+
+    .lettuce {
+        width: 50%;
+        top:-30px;
+        left: -30px;
+    }
+
+    .coctail {
+        width: 70%;
+        right: -100px;
+    }
+
+    .decoration-page, .blog-page {
+        height: auto;
+    }
+
+    .decoration-page__images {
+        width: 100%;
+    }
+
+    .decoration-page__box {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .menu-page {
+        height: auto;
+    }
+
+    .menu-page__nav li, .booking-page__mozzabar h4, .booking-page__mozzabar p, .booking-page__adress p, .booking-page__not-available p, .blog-page__box-text h4 {
+        font-size: 80%;
+    }
+
+    .menu-page__background {
+        display: flex;
+        flex-direction: column;
+        padding: 0;
+        align-items: center;
+    }
+
+    .menu-page__box {
+        width: 80%;
+        margin: 5% 0;
+    }
+
+    .blog-page__content {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+    }
+
+    .blog-page__box {
+        width: 40%;
+        height: 300px;
+        margin-top: 10%;
+    }
+
+    .blog__title {
+        margin-top: 10%;
+    }
+ }
+
+ @media (max-width: 602px) {
+    .main-page ul {
+        display: none;
+    }
+
+    .welcome h1, .welcome h2 {
+        font-size: 80%;
+    }
+
+    .burger-nav {
+        display: flex;
+        height: 50%;
+    }
+
+    .concept-text p, .contact-icons p, .contact-page__follow-us h4, footer p, footer li {
+        font-size: 70%;
+    }
+
+    .lettuce {
+        width: 40%;
+        top:-30px;
+        left: -30px;
+    }
+
+    .coctail {
+        width: 70%;
+        right: -100px;
+    }
+
+    .decoration-page, .blog-page {
+        height: auto;
+    }
+
+    .decoration-page__images {
+        width: 100%;
+    }
+
+    .decoration-page__box {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .menu-page {
+        height: auto;
+    }
+
+    .menu-page__nav li, .booking-page__mozzabar h4, .booking-page__mozzabar p, .booking-page__adress p, .booking-page__not-available p, .blog-page__box-text h4 {
+        font-size: 80%;
+    }
+
+    .menu-page__background {
+        display: flex;
+        flex-direction: column;
+        padding: 0;
+        align-items: center;
+    }
+
+    .menu-page__box {
+        width: 80%;
+        margin: 5% 0;
+    }
+
+    .blog-page__content {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+    }
+
+    .blog-page__box {
+        width: 40%;
+        height: 300px;
+        margin-top: 10%;
+    }
+
+    .blog__title {
+        margin-top: 10%;
+    }
+
+}
+
+@media (max-width: 810px) {
+    .main-page ul {
+        display: none;
+    }
+
+    .burger-nav {
+        display: flex;
+        height: 50%;
+    }  
+    
+    .decoration-page__box {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+    }
+}
+
+    
+ @media (max-width: 992px) {
+    
+ }
+ @media (max-width: 1200px) {
+    
+ }
